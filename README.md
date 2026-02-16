@@ -1,1 +1,10 @@
 # ESP32-Health-Bracelet
+This project is a comprehensive health monitoring system consisting of an ESP32-based smart wristband and a synchronized Android mobile application, designed primarily for elderly or patient care. Utilizing MAX30100 and MPU6050 sensors, the wristband measures heart rate and blood oxygen saturation (SpO2) in real-time while detecting potential fall events via accelerometer data. While the hardware features an integrated OLED display for local monitoring, all vital data is transmitted via Bluetooth to the companion mobile application.
+
+The system's most critical feature is its safety-oriented intelligent alerting mechanism. If a fall is detected or vital signs fall outside predetermined safety thresholds, the mobile app automatically triggers high-priority emergency notifications. Developed with the Kivy framework for Android, the application utilizes background processing (WakeLock) to maintain a persistent connection, ensuring that caregivers can respond rapidly to critical health events or emergencies.
+
+Türkçe Açıklama:
+
+Bu proje, yaşlılar veya hastalar için tasarlanmış, ESP32 tabanlı bir akıllı bileklik ve buna eşlik eden bir Android mobil uygulamasından oluşan kapsamlı bir sağlık takip sistemidir. Bileklik üzerindeki MAX30100 ve MPU6050 sensörleri aracılığıyla kullanıcının nabız ve kandaki oksijen (SpO2) seviyeleri anlık olarak ölçülmekte, ivmeölçer verileriyle de olası düşme durumları tespit edilmektedir. Donanım üzerindeki OLED ekran sayesinde veriler yerel olarak görülebilirken, tüm bilgiler Bluetooth üzerinden senkronize edilen mobil uygulamaya aktarılmaktadır.
+
+Sistemin en kritik özelliği, kullanıcı güvenliğini ön planda tutan akıllı uyarı mekanizmasıdır. Eğer sistem bir düşme algılarsa veya hayati bulgular (nabız/oksijen) belirlenen güvenli limitlerin dışına çıkarsa, mobil uygulama üzerinden otomatik olarak yüksek öncelikli bildirimler gönderilmektedir. Android platformu için Kivy frameworkü ile geliştirilen uygulama, arka planda (WakeLock) çalışarak bağlantının kopmamasını ve acil durumlarda hızlı müdahale imkanı sunulmasını sağlar.
